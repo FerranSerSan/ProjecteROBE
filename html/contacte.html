@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Contacte</title>
+        <meta name="FerranSerranoSanmacario" content="ProjecteModul">
+        <meta name="description" content="contacte">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Robe i Més</h1>
+        </header>
+
+        <nav>
+            <a href="./index.html">INICI</a>
+            <a href="./horari.html">GIRES</a>
+            <a href="./videos.html">VIDEOS</a>
+        </nav>
+
+        <main>
+            <h2>Contacta amb nosaltres</h2>
+            <p>Si tens alguna pregunta o comentari, no dubtis en posar-te en 
+                contacte amb nosaltres omplint el següent formulari:</p>
+
+            <form action="/enviar_contacte" method="post">
+                <div>
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" placeholder="Escriu el teu nom" required>
+                </div>
+        
+                <div>
+                    <label for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="Escriu el teu correu" required>
+                </div>
+        
+                <div>
+                    <label for="phone">Telèfon:</label>
+                    <input type="number" id="phone" name="phone" placeholder="Escriu el teu número de telèfon" required>
+                </div>
+        
+                <div>
+                    <label for="color">Selecciona el teu color preferit:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+        
+                <div>
+                    <label for="date">Data de naixement:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+        
+                <div>
+                    <label>Preferències de contacte:</label>
+                    <input type="radio" id="email-contact" name="contact-preference" value="email" checked>
+                    <label for="email-contact">Correu electrònic</label>
+                    <input type="radio" id="phone-contact" name="contact-preference" value="phone">
+                    <label for="phone-contact">Telèfon</label>
+                </div>
+        
+                <div>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Vull rebre novetats i actualitzacions
+                    </label>
+                </div>
+        
+                <div>
+                    <label for="subject">Assumpte:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="suggeriment">Suggeriment</option>
+                        <option value="queixa">Queixa</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="message">Missatge:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Escriu el teu missatge aquí" required></textarea>
+                </div>
+        
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>2024 - Projecte personal dedicat als fans de Robe.</p>
+        </footer>
+    </body>
+</html>
