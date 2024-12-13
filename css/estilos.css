@@ -63,7 +63,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Main content */
+/* Main */
 main {
     padding: 40px 20px;
     max-width: 1200px;
@@ -149,13 +149,13 @@ th, td {
     border-bottom: 3px solid #393939; 
 }
 
-table > th {
+table th {
     background: linear-gradient(#3764ea, #333); 
     color: rgb(255, 255, 255); 
     font-weight: bold; 
 }
 
-table > td {
+table td {
     background-color: #333; 
     color: rgb(255, 255, 255); 
 }
@@ -168,13 +168,3 @@ td[rowspan] {
 table td:first-child, table th:first-child {
     width: 20%; 
 }
-
-input [type="submit"] { 
-    color: aqua;   
-}
-
-input [type="text"] {
-    color: aqua;   
-
-}
-
