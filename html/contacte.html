@@ -5,7 +5,7 @@
         <title>Contacto</title>
         <meta name="FerranSerranoSanmacario" content="ProjecteModul">
         <meta name="description" content="contacte">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
     
     <body>
@@ -19,12 +19,12 @@
             <a href="./videos.html">VIDEOS</a>
         </nav>
 
-        <main>
+        <main id="formulario">
             <h2>Contacta con nosotros</h2>
             <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en 
                 contacto con nosotros rellenando el siguiente formulario:</p>
 
-            <form action="/enviar_contacte" method="post">
+            <form action="/enviar_contacte" method="post" >
                 <div>
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" placeholder="Escriu el teu nom" required>
@@ -78,8 +78,8 @@
                     <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
                 </div>
         
-                <div>
-                    <button type="submit">Enviar</button>
+                <div class="submit">
+                    <input type="submit"></input>
                 </div>
             </form>
         </main>
