@@ -98,6 +98,16 @@ section {
     width: 100%;
 }
 
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3764ea;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 /* Videos */
 .videos {
     background-color: #333;
@@ -366,5 +376,3 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #2b54c2;
 }
-
-
