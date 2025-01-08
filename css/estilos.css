@@ -4,20 +4,22 @@
     box-sizing: border-box;
 }
 
-/* Fonts */
+/* Font per a nav */
 @font-face {
     font-family: 'MiFuente';
-    src: url('../fonts/gimp_scribble/Gimp\ Scribble.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../fonts/gimp_scribble/Gimp Scribble.ttf') format('truetype');
+    font-weight: normal;  
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'MiFuente';
-    src: url('../fonts/gimp_scribble/Gimp\ Scribble.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+
+
+h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
+
 
 /* Body */
 body {
