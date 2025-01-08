@@ -87,7 +87,7 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-/* Sección principal */
+/* Sections */
 section {
     margin-bottom: 40px;
     padding: 30px;
@@ -108,7 +108,7 @@ section h2 {
     text-align: center;
 }
 
-/* Videos */
+/* clase per a els sections amb videos */
 .videos {
     background-color: #333;
     border-radius: 12px;
