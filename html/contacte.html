@@ -14,9 +14,17 @@
         </header>
 
         <nav>
-            <a href="./index.html">INICIO</a>
-            <a href="./horari.html">GIRAS</a>
-            <a href="./videos.html">VIDEOS</a>
+            <ul>
+                <li>
+                    <a href="./index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./horari.html">GIRAS</a>
+                </li>
+                <li>
+                    <a href="./videos.html">VIDEOS</a>
+                </li>
+            </ul>
         </nav>
 
         <main id="formulario">
@@ -49,20 +57,14 @@
                     <input type="date" id="fecha" name="fecha" required>
                 </div>
             
-                <div class="preferencias-contacto">
+                <div class="preferencias">
                     <label>Preferencias de contacto:</label>
                     
                     <input type="radio" id="email-contacto" name="contacto-preferencia" value="email" checked>
-                    <label for="email-contacto">Correo electrónico</label>
+                    <label for="email-contacto">Correo electrónico  </label>
             
                     <input type="radio" id="phone-contacto" name="contacto-preferencia" value="phone">
                     <label for="phone-contacto">Teléfono</label>
-                </div>
-            
-                <div>
-                    <label for="subscribe">
-                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Quiero recibir novedades y actualizaciones
-                    </label>
                 </div>
             
                 <div>
@@ -77,6 +79,12 @@
                 <div>
                     <label for="missatge">Mensaje:</label>
                     <textarea id="missatge" name="missatge" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+
+                <div>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Quiero recibir novedades y actualizaciones
+                    </label>
                 </div>
             
                 <div>
