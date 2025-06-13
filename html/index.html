@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Robe y Más</title>
-        <meta name="FerranSerranoSanmacario" content="ProjecteModul">
-        <meta name="description" content="indice">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    
-    <body>
-        <header>
-            <h1>Robe y Más</h1>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Robe y Más</title>
+    <meta name="FerranSerranoSanmacario" content="ProjecteModul" />
+    <meta name="description" content="indice" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="./horari.html">GIRAS</a>
-                </li>
-                <li>
-                    <a href="./contacte.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="./videos.html">VIDEOS</a>
-                </li>
-            </ul>
-        </nav>
+  <body>
+    <header>
+      <h1>Robe y Más</h1>
+    </header>
+    <nav id="navegador">
+      <ul id="ul">
+        <li class="li">
+          <a id="BtnInici" href="#">INICI</a>
+        </li>
+        <li class="li">
+          <a id="BtnHorari" href="#">GIRAS</a>
+        </li>
+        <li class="li">
+          <a id="BtnContacte" href="#">CONTACTO</a>
+        </li>
+        <li class="li">
+          <a id="BtnVideo" href="#">VIDEOS</a>
+        </li>
+        <li class="li">
+          <a id="BtnInSe" href="#">INICIAR SESION</a>
+        </li>
+      </ul>
+    </nav>
 
-        <main>
-            <section>
-                <h2>Inicio</h2>
-                <p>Explora las anécdotas y momentos más interesantes de la banda Robe.</p>
-            </section>
+    <main id="cambiarContingut">
+      <section>
+        <h2>Inicio</h2>
+        <p>
+          Explora las anécdotas y momentos más interesantes de la banda Robe.
+        </p>
+      </section>
+      <div id="carregarCampText"></div>
+      <div id="DivPublicacions"></div>
+    </main>
 
-            <aside>
-                <h3>¿Sabías que...?</h3>
-                <p>"Pedrá" es una única canción de más de 30 minutos, grabada con músicos de otras bandas 
-                    como Platero y Tú. A pesar de las expectativas y controversias iniciales, 
-                    con el tiempo se ha consolidado como una obra de culto del rock español.</p>
-            </aside>
-            <aside>
-                <h3>¿Sabías que...?</h3>
-                <div class="img-aside-dreta">
-                    <img src="../imatges/Jesucristo-Garcia.jpeg" alt="img">
-                </div>
-                <p>Robe Iniesta, el líder de Extremoduro, tenía la peculiar costumbre de escribir 
-                    las letras de sus canciones en servilletas y trozos de papel que encontraba por ahí? 
-                    Una de las historias más curiosas cuenta que la letra de "Jesucristo García", fue escrita en una noche de 
-                    borrachera en un bar de Plasencia. Según dicen, Robe improvisó la letra mientras discutía 
-                    con unos amigos sobre religión y la situación del mundo, plasmando en ese momento el espíritu 
-                    irreverente y crítico que caracteriza a la canción.
-                </p>
-            </aside>
-        </main>
+    <div id="boto-Login">
+      <button id="BtnLogin">Registrarse</button>
+    </div>
 
-        <footer>
-            <div class="logo">
-                <img src="../imatges/logo.jpeg" alt="logo">
-            </div>
-            <a> 2024 - Proyecto personal dedicado a los fans de Robe.</a>
-        </footer>
-    </body>
+    <footer>
+      <div class="logo">
+        <img src="../imatges/logo.jpeg" alt="logo" />
+      </div>
+      <a> 2024 - Proyecto personal dedicado a los fans de Robe.</a>
+    </footer>
+
+    <script src="../js/carregarMain.js"></script>
+  </body>
 </html>

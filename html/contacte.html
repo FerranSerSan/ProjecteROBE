@@ -1,103 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Contacto</title>
-        <meta name="FerranSerranoSanmacario" content="ProjecteModul">
-        <meta name="description" content="contacte">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    
-    <body>
-        <header>
-            <h1>Robe Y Más</h1>
-        </header>
+<main id="formulario">
+  <form action="../js/demanaruser.js" method="post">
+    <h2>Contacta con nosotros</h2>
+    <p>
+      Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto
+      con nosotros rellenando el siguiente formulario:
+    </p>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./horari.html">GIRAS</a>
-                </li>
-                <li>
-                    <a href="./videos.html">VIDEOS</a>
-                </li>
-            </ul>
-        </nav>
+    <div>
+      <label for="nom">Nombre:</label>
+      <input
+        type="text"
+        id="nom"
+        name="nom"
+        placeholder="Escribe tu nombre"
+        required
+      />
+    </div>
 
-        <main id="formulario">
-            <form action="/enviar_contacte" method="post">
-                <h2>Contacta con nosotros</h2>
-                <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros rellenando el siguiente formulario:</p>
-            
-                <div>
-                    <label for="nom">Nombre:</label>
-                    <input type="text" id="nom" name="nom" placeholder="Escribe tu nombre" required>
-                </div>
-            
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Escribe tu correo electronico" required>
-                </div>
-            
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu numero de telefono" required>
-                </div>
-            
-                <div>
-                    <label for="color">Selecciona tu color favorito:</label>
-                    <input type="color" id="color" name="color">
-                </div>
-            
-                <div>
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
-            
-                <div class="preferencias">
-                    <label>Preferencias de contacto:</label>
-                    
-                    <input type="radio" id="email-contacto" name="contacto-preferencia" value="email" checked>
-                    <label for="email-contacto">Correo electrónico  </label>
-            
-                    <input type="radio" id="phone-contacto" name="contacto-preferencia" value="phone">
-                    <label for="phone-contacto">Teléfono</label>
-                </div>
-            
-                <div>
-                    <label for="subject">Asunto:</label>
-                    <select id="subject" name="subject" required>
-                        <option value="consulta">Consulta</option>
-                        <option value="sugerencia">Sugerencia</option>
-                        <option value="queja">Queja</option>
-                    </select>
-                </div>
-            
-                <div>
-                    <label for="missatge">Mensaje:</label>
-                    <textarea id="missatge" name="missatge" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
-                </div>
+    <div>
+      <label for="email">Correo electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Escribe tu correo electronico"
+        required
+      />
+    </div>
 
-                <div>
-                    <label for="subscribe">
-                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Quiero recibir novedades y actualizaciones
-                    </label>
-                </div>
-            
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </main>
+    <div>
+      <label for="telefono">Teléfono:</label>
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        placeholder="Escribe tu numero de telefono"
+        required
+      />
+    </div>
 
-        <footer>
-            <div class="logo">
-                <img src="../imatges/logo.jpeg" alt="logo">
-            </div>
-            <a> 2024 - Proyecto personal dedicado a los fans de Robe.</a>
-        </footer>
-    </body>
-</html>
+    <div>
+      <label for="color">Selecciona tu color favorito:</label>
+      <input type="color" id="color" name="color" />
+    </div>
+
+    <div>
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" required />
+    </div>
+
+    <div class="preferencias">
+      <label>Preferencias de contacto:</label>
+
+      <input
+        type="radio"
+        id="email-contacto"
+        name="contacto-preferencia"
+        value="email"
+        checked
+      />
+      <label for="email-contacto">Correo electrónico </label>
+
+      <input
+        type="radio"
+        id="phone-contacto"
+        name="contacto-preferencia"
+        value="phone"
+      />
+      <label for="phone-contacto">Teléfono</label>
+    </div>
+
+    <div>
+      <label for="subject">Asunto:</label>
+      <select id="subject" name="subject" required>
+        <option value="consulta">Consulta</option>
+        <option value="sugerencia">Sugerencia</option>
+        <option value="queja">Queja</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="missatge">Mensaje:</label>
+      <textarea
+        id="missatge"
+        name="missatge"
+        rows="4"
+        placeholder="Escribe tu mensaje aquí"
+        required
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+        Quiero recibir novedades y actualizaciones
+      </label>
+    </div>
+
+    <div>
+      <input type="submit" value="Enviar" />
+    </div>
+  </form>
+</main>
