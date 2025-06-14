@@ -463,6 +463,7 @@ function login() {
   }
 }
 
+// enviar publicacions ----------------------------------------------------------------------------------------------------------------
 function enviarPublicacioBBDD(contingut) {
   let params = {
     contingut_publicacio: contingut,
